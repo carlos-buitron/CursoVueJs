@@ -9,9 +9,13 @@ Cuando queremos relacionar mi "working directory" con el "local repository" en n
 
 Asegurar que los archivos del "working directory" tengan seguimiento para ello debo mostrar el estado de los archivos de mi "working directory" que no han sido registrados, entonces usar "git status", pero si tenemos ya archivos que fueron modificados, eliminados o creados entonces utilizar "git status -s".
 
-Entonces para hacer un seguimiento de los archivos de mi "working directory" tenemos que mandar al area local "staging area" entonces usamos el comando "git add *" donde "*" puede ser "." ó el "nombreArchivo.extension", podemos validar haciendo "git status -" para validar si ya se encuentra en el "staging area" o área temporal porque perfectamente podemos ir monitoreando los cambios solo de un archivo en especifico o de todos los archivos perteneciente a mi "staging area". Para mandar algun archivo o todos los archivos de mi "staging area" o área temporal a nuestro repositorio "local repository" los "commit -m "escribir mensjae" son los que nos sirve para hacer una copia deel archivo en el "staging area"
+Entonces para hacer un seguimiento de los archivos de mi "working directory" tenemos que mandar al area local "staging area" entonces usamos el comando "git add *" donde "*" puede ser "." ó el "nombreArchivo.extension", podemos validar haciendo "git status -" para validar si ya se encuentra en el "staging area" o área temporal porque perfectamente podemos ir monitoreando los cambios solo de un archivo en especifico o de todos los archivos perteneciente a mi "staging area". Para mandar algun archivo o todos los archivos de mi "staging area" o área temporal a nuestro repositorio "local repository" los "commit -m "escribir mensjae" son los que nos sirve para hacer una copia deel archivo en el "staging area".
 
+Si queremis hacer los cambios del "working directory" debemos pasar esos cambios al "stagin area".
 
+Para mostrar los "commit" realizados utilizamos el comando "git log --oneline" 
+
+Si queremos eliminar un cambio determinado usamos el comando que hace referencia al indicador tal como "git --hard identificador"
 
 
 Angela carrasco, quererte a ti.
