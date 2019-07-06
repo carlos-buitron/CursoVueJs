@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/vue.js"></script>        
+    </head>
+    <body>
+        <div id="app">
+            <p>{{primermensaje}}</p>
+            <p>{{segundomensaje}}</p>
+            <p>{{valor-30}}</p>
+            <p>{{10-30}}</p>
+            <p>{{valor<40?"Es menor que 40":"Es mayor que 40"}}</p>
+            <p>{{saludar()}}</p>
+            <p>{{comparar()}}</p>
+            <img src="img/logo.png"/>
+            <img v-bind:src="urlLogo"/>
+            <br/>
+            <a href="https://www.google.com.pe">Obtener enlace por propiedad href</a>
+            <a v-bind:href="obtenerEnlace()">Obtener por methods de Vue</a>
+            <br/>
+            <button v-on:click="eventoClick">Evento</button>
+            <br>
+            <br>
+            <button v-on:click="disminuir">-</button>
+            {{contador}}
+            <button v-on:click="aumentar">+</button>
+        </div>
+        <script type="text/javascript" src="app/main.js"></script>
+    </body>
+</html>
